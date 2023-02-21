@@ -12,8 +12,7 @@ added and removed by editing the config.h file.
 I have dwmblocks read my preexisting scripts
 [here in my dotfiles repo](https://github.com/sudo-Tiz/my_scripts).
 So if you want my build out of the box, download those and put them in your
-`$PATH`. I do this to avoid redundancy in LARBS, both i3 and dwm use the same
-statusbar scripts.
+`$PATH`.
 
 # Signaling changes
 
