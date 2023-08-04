@@ -1,32 +1,40 @@
-//Modify this file to change what commands output to your statusbar, and recompile using the make command.
+// Modify this file to change what commands output to your statusbar, and
+// recompile using the make command.
 static const Block blocks[] = {
-	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
-	/* {"⌨", "sb-kbselect", 0, 30}, */
-	{"", "cat /tmp/recordingicon 2>/dev/null",	0,	9},
-	{"",	"sb-tasks",	10,	26},
-	/* {"",	"sb-music",	0,	11}, */
-	{"",	"sb-pacpackages",	0,	8},
-	{"",	"sb-news",		0,	6},
-	/* {"",	"sb-price xmr Monero 🔒 24",			9000,	24}, */
-	/* {"",	"sb-price eth Ethereum 🍸 23",	9000,	23}, */
-	/* {"",	"sb-price btc Bitcoin 💰 21",				9000,	21}, */
-	{"",	"sb-torrent",	20,	7},
-	/* {"",	"sb-memory",	10,	14}, */
-	/* {"",	"sb-cpu",		10,	18}, */
-	/* {"",	"sb-moonphase",	18000,	17}, */
-	{"",	"sb-doppler",	0,	13},
-	{"",	"sb-forecast",	18000,	5},
-	{"",	"sb-mailbox",	180,	12},
-	{"",	"sb-nettraf",	1,	16},
-	{"",	"sb-volume",	0,	10},
-	{"",	"sb-battery",	5,	3},
-	{"",	"sb-clock",	60,	1},
-	{"",	"sb-internet",	5,	4},
-	/* {"",	"sb-iplocate", 0,	27}, */
-	{"",	"sb-help-icon",	0,	15},
+    /*Icon*/ /*Command*/ /*Update Interval*/ /*Update Signal*/
+    {"", "sb-record", 10, 9},    /* {"", "cat /tmp/recordingicon 2>/dev/null", 0, 9}, */
+    {"", "sb-tasks", 30, 26},
+    {"", "sb-music", 0, 11},
+    {"", "sb-pacpackages", 0, 8},
+    {"", "sb-mailbox", 180, 12},
+    {"", "sb-news", 0, 6},
+    {"", "sb-theme", 0, 25},
+    {"", "sb-bluetooth", 60, 24},
+    {"", "sb-nextcloud", 0, 23},
+    {"", "sb-torrent", 20, 20},
+    {"", "sb-memory", 10, 14},
+    {"", "sb-msi", 10, 18},
+    {"", "sb-nettraf", 1, 16},
+    {"", "sb-disk /", 180, 21},
+    {"", "sb-disk /media/HDD/$USER", 180, 21},
+    {"", "sb-forecast", 18000, 5},
+    {"", "sb-clock", 60, 1},
+    {"", "sb-volume", 0, 10},
+    {"", "sb-battery", 30, 3},
+    /* {"", "sb-internet", 5, 4}, */ // replaced by nm-applet
+    /* {"",	"sb-moonphase",	18000,	17}, */
+    /*{"",	"sb-doppler",	0,	13},*/
+    /* {"",	"sb-kbselect",		0,	30}, */
+    /*{"",	"sb-help-icon",	0,	15},*/
+    /* {"",	"sb-price lbc \"LBRY Token\" 📚",			9000, 22},*/
+    /* {"",	"sb-price bat \"Basic Attention Token\" 🦁",	9000,	20}, */
+    /* {"",	"sb-price link \"Chainlink\" 🔗",			300, 25}, */
+    /* {"",	"sb-price xmr \"Monero\" 🔒",			9000,	24}, */
+    /* {"",	"sb-price eth Ethereum 🍸",	9000,	23}, */
+    /* {"",	"sb-price btc Bitcoin 💰",				9000, 21},*/
 };
 
-//Sets delimiter between status commands. NULL character ('\0') means no delimiter.
+// Sets delimiter between status commands. NULL character ('\0') means no delimiter.
 static char *delim = " ";
 
 // Have dwmblocks automatically recompile and run when you edit this file in
