@@ -10,17 +10,17 @@ static const Block blocks[] = {
     {"", "sb-news", 0, 6},
     {"", "sb-theme", 0, 25},
     {"", "sb-bluetooth", 10, 24},
-    {"", "sb-nextcloud", 0, 23},
     {"", "sb-torrent", 20, 20},
     {"", "sb-msi", 5, 18},
     {"", "sb-nettraf", 1, 16},
     {"", "sb-memory", 10, 14},
     {"", "sb-disk /", 180, 21},
-    {"", "sb-disk /media/HDD/$USER", 180, 21},
+    {"", "sb-disk /media/HDD/$USER/", 180, 21},
     {"", "sb-forecast", 18000, 5},
     {"", "sb-clock", 60, 1},
     {"", "sb-volume", 0, 10},
     {"", "sb-battery", 30, 3},
+    /* {"", "sb-nextcloud", 0, 23}, */
     /* {"", "sb-internet", 5, 4}, */ // replaced by nm-applet
     /* {"",	"sb-moonphase",	18000,	17}, */
     /*{"",	"sb-doppler",	0,	13},*/
