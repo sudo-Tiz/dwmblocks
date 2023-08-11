@@ -20,8 +20,8 @@ static const Block blocks[] = {
     {"", "sb-clock", 60, 1},
     {"", "sb-volume", 0, 10},
     {"", "sb-battery", 30, 3},
+    {"", "sb-internet", 5, 4},
     /* {"", "sb-nextcloud", 0, 23}, */
-    /* {"", "sb-internet", 5, 4}, */ // replaced by nm-applet
     /* {"",	"sb-moonphase",	18000,	17}, */
     /*{"",	"sb-doppler",	0,	13},*/
     /* {"",	"sb-kbselect",		0,	30}, */
